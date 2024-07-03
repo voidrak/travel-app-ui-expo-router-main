@@ -2,7 +2,6 @@ import {
   ScrollView,
   StyleSheet,
   Text,
-  TextInput,
   TouchableOpacity,
   View,
 } from "react-native";
@@ -75,22 +74,10 @@ const Page = () => {
           ),
         }}
       />
-      <View style={[styles.container, { paddingTop: 20 }]}>
+      <View style={[styles.container, { paddingTop: 50 }]}>
         <ScrollView showsVerticalScrollIndicator={false}>
           <Text style={styles.headingTxt}>Embark</Text>
           <Text style={styles.subHeader}>on an Adventure</Text>
-
-          <View style={styles.searchSectionWrapper}>
-            <View style={styles.searchBar}>
-              <Ionicons
-                name="search"
-                size={18}
-                style={{ marginRight: 5 }}
-                color={Colors.black}
-              />
-              <TextInput placeholder="Search..." />
-            </View>
-          </View>
 
           <CategoryButtons onCagtegoryChanged={onCatChanged} />
 
